@@ -11,3 +11,68 @@ html {
     font-weight: 300;
     font-size: 20px;
 }
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color .2s, color .2s, border .2s;
+}
+
+.btn-hungry:link,
+.btn-hungry:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-show-more:link,
+.btn-show-more:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-hungry:hover,
+.btn-hungry:active {
+    border: 1px solid #e67e22;
+}
+
+.btn-show-more:hover,
+.btn-show-more:active {
+    border: 1px solid #e67e22;
+    color: #fff;
+}
