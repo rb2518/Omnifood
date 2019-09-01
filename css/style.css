@@ -1,3 +1,7 @@
+/*------------------*/
+/* Basic Setup */
+/*-----------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -12,20 +16,9 @@ html {
     font-size: 20px;
 }
 
-.header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box {
-    width: 1140px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/*------------------*/
+/* Reusable component */
+/*-----------------*/
 
 h1 {
     margin: 0 0 20px 0;
@@ -76,3 +69,62 @@ h1 {
     border: 1px solid #e67e22;
     color: #fff;
 }
+
+/*------------------*/
+/* Header */
+/*-----------------*/
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.nav-main {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.nav-main li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-main li a:link,
+.nav-main li a:visited{
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+}
+
+.nav-main li a:hover,
+.nav-main li a:active {
+    border-bottom: 2px solid #e67e22; 
+}
+
